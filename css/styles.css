@@ -192,7 +192,7 @@ background-repeat: no-repeat;
     background-color: var(--fon-footer-h1); 
 }  */
 
-.backdrop {
+ .backdrop {
 position:fixed;
 top:0;
 left: 0;
@@ -210,11 +210,22 @@ background-color: rgba(0, 0, 0, 0.2);
     
 
     
-    transform: translate(50%, 50%);
+    transform: translate(-50%, -50%);
     background-color: var(--backgroundcolor-team);
+} 
+.modal-close {padding: 0;
+ border: 0;
+ width: 30px;
+ height: 30px;
+border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: var(--backgroundcolor-team);
 }
-
-
+/* .modal-close{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    } */
 
 
 

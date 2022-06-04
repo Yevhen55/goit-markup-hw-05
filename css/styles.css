@@ -89,14 +89,22 @@ ul {margin: 0; padding: 0;
 
 
 
-.header-list .item {
+
+.header-list .link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; 
+   
+   
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .auth-nav {
     margin-left: 331px;
 }
@@ -213,7 +221,10 @@ background-color: rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
     background-color: var(--backgroundcolor-team);
 } 
-.modal-close {padding: 0;
+.modal-close { position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
  border: 0;
  width: 30px;
  height: 30px;

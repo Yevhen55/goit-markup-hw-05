@@ -469,11 +469,20 @@ ul {
     height: 44px;
    border-radius: 50%;
 background-color: #ffffff;
-fill: #AFB1B8;}
+fill: #AFB1B8;
+transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transform: rotate(0deg);
+}
 
 
 .social-item:hover,
-.social-item:focus{fill:var(--backgroundcolor-team);background-color: var(--focus-hover-active-color);}
+.social-item:focus{fill:var(--backgroundcolor-team);
+    background-color: var(--focus-hover-active-color);
+transform: rotate(360deg);
+    
+
+}
 .socials .social-link+.social-link{margin-left: 10px;}
 /* постоянные клиенты  */
 .container .clients {display: flex;
@@ -492,7 +501,7 @@ fill: #AFB1B8;}
         align-items: center;
         border-radius: 4px;
         fill: #AFB1B8;
-       
+      
        transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     
@@ -503,7 +512,7 @@ fill: #AFB1B8;}
 
 .user_client:hover,
 .user_client:focus{
-    fill:var(--focus-hover-active-color);
+    fill:var(--focus-hover-active-color) ;
     border-color: var(--focus-hover-active-color);
 
 }

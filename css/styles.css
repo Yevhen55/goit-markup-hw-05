@@ -246,10 +246,20 @@ transition-duration: 250ms;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 background-color: var(--backgroundcolor-team);
-
+color:none;
+}
+.icon-close {
+    fill:var(--primary-text-color);
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.icon-close:hover,
+.icon-close:focus{
+    fill:var(--focus-hover-active-color)
+}
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
@@ -550,7 +560,7 @@ transform: rotate(360deg);}
 .action {position: relative;
 overflow: hidden;}
 .overlay {
-    display: block;
+    display:block;
     font-family: "Roboto";
     font-size: 18px;
     line-height: 1.55;
@@ -564,10 +574,10 @@ overflow: hidden;}
     right: 0;
      width: 100%;
      height: 100%;
-     transform: translateY(100%);
-     transition: tramsform 250ms cubic-bezier(0.4, 0, 0.2, 1) , 
+    transform: translateY(100%);
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) , 
      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     opacity: 0 cubic-bezier(0.4, 0, 0.2, 1) ;
+     opacity: 0 cubic-bezier(0.4, 0, 0.2, 1);
 }
 .more:hover .overlay,
 .more:focus .overlay {
@@ -700,7 +710,8 @@ margin-top: 0;margin-bottom: 20px;}
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1)
-   
+    
+    
 }
 
 
@@ -711,6 +722,9 @@ margin-top: 0;margin-bottom: 20px;}
  .follow-link:hover,
 .follow-link:focus{
     background-color: var(--focus-hover-active-color);
+    transition-property:background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 

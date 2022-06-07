@@ -727,8 +727,6 @@ margin-top: 0;margin-bottom: 20px;}
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-
-
 .list-icon .follow-item+.follow-item {margin-left: 10px;}
 .fot{display: flex; align-items: center;}
 .footer-ico{margin-left: 70px;}
